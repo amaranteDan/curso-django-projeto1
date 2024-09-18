@@ -6,11 +6,30 @@ $ python3 -m venv venv
 **Pip list
 $pip freeze
 
-**Django Version
-$ django-admin --version 
+**Pip requirements
+$ pip install requirements.tx
 
 **git commands for the project
 
 git config --global user.name "Daniel Amarante"
 git config --global user.email "danz82158@gmail.com"
 git config --global init.defaultBranch main
+git push origin main -u -> to set the upstream and the next time, type git push
+
+Django commands and adminstration
+**Django help
+$django-admin --help
+**Django Version
+$ django-admin --version 
+**Django statrproject . to indicate that is local where starts the project -> the only way to use is to start a new project
+$ django-admin startproject projeto .
+
+**To run the server and administration
+$python manage.py runserver
+
+**To generate secret keys using python django framework
+pip install secret-key-generator
+
+**How to create secrets on bash
+$ python3 -c "import string as s; from secrets import SystemRandom as SR; print(''.join(SR().choices(s.ascii_letters + s.digits + s.punctuation, k=64)))"
+

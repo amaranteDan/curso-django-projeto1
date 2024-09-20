@@ -1,4 +1,6 @@
-Checking the softwares versio
+Curso Udemy Django framework
+
+Checking the softwares version
 
 ** Virtual env
 $ python3 -m venv venv
